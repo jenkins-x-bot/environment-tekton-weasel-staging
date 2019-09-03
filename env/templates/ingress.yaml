@@ -8,7 +8,7 @@ metadata:
   name: jx-tentant-service
 spec:
   rules:
-  - host: jx-tenant-service-jx-staging.{{ .Values.domain }}
+  - host: jx-tenant-service-jx-staging.{{ .Values.expose.config.domain }}
     http:
       paths:
       - backend:
