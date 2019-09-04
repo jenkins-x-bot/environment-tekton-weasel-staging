@@ -24,9 +24,9 @@ prow: {}
 
 jx-tenant-service:
   replicaCount: 1
-  parentDomain: staging.jxaas.io
+  parentDomain: jxaas.io
   parentProject: cb-aps-poc
-  parentDNSZone: staging-jxaas-io-parent
+  parentDNSZone: jxaas-io-parent
   dbPassword: vault:tekton-weasel/staging/jx-tenant-service-db:password
   sa: vault:tekton-weasel/staging/jx-tenant-service-sa:json
   dbInstance: jenkins-x-infra:europe-west1:staging-jx-tenant-db=tcp:5432
