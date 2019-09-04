@@ -27,6 +27,7 @@ jx-tenant-service:
   parentDomain: jxaas.io
   parentProject: cb-aps-poc
   parentDNSZone: jxaas-io-parent
+  basicAuthPassword: vault:tekton-weasel/staging/jx-tenant-service-ba:password
   dbPassword: vault:tekton-weasel/staging/jx-tenant-service-db:password
   sa: vault:tekton-weasel/staging/jx-tenant-service-sa:json
   dbInstance: jenkins-x-infra:europe-west1:staging-jx-tenant-db=tcp:5432
