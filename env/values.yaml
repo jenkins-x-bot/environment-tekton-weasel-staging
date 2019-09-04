@@ -23,6 +23,7 @@ jenkins:
 prow: {}
 
 jx-tenant-service:
+  replicaCount: 1
   parentDomain: staging.jxaas.io
   parentProject: cb-aps-poc
   parentDNSZone: staging-jxaas-io-parent
