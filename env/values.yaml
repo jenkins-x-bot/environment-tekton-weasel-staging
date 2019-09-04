@@ -30,3 +30,7 @@ jx-tenant-service:
   dbPassword: vault:tekton-weasel/staging/jx-tenant-service-db:password
   sa: vault:tekton-weasel/staging/jx-tenant-service-sa:json
   dbInstance: jenkins-x-infra:europe-west1:staging-jx-tenant-db=tcp:5432
+  service:
+    serviceAnnotations:
+      fabric8.io/expose: "false"
+      fabric8.io/exposeUrl: https://jx-tenant-service-jx-staging.jenkins-x.live
