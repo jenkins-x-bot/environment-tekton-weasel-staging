@@ -30,6 +30,7 @@ jx-tenant-service:
   basicAuthPassword: vault:tekton-weasel/staging/jx-tenant-service-ba:password
   dbPassword: vault:tekton-weasel/staging/jx-tenant-service-db:password
   sa: vault:tekton-weasel/staging/jx-tenant-service-sa:json
+  saasSA: vault:tekton-weasel/staging/jx-tenant-service-saas-sa:json
   dbInstance: jenkins-x-infra:europe-west1:staging-jx-tenant-db=tcp:5432
   service:
     serviceAnnotations:
