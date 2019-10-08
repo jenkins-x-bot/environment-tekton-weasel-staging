@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/auth-secret: jx-basic-auth
+    nginx.ingress.kubernetes.io/auth-type: basic
+  generation: 3
+  labels:
+    provider: fabric8
+  name: arcalosui
+  namespace: jx-staging
+spec:
+  rules:
+  - host: arcalosui-jx-staging.jenkins-x.live
+    http:
+      paths:
+      - backend:
+          serviceName: arcalosui
+          servicePort: 80
+  tls:
+  - hosts:
+    - arcalosui-jx-staging.jenkins-x.live
+    secretName: tls-jenkins-x-live-p
