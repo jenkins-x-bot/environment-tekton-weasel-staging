@@ -39,3 +39,12 @@ jx-tenant-service:
 
 arcalosui:
   replicaCount: 2
+
+jenkins-x-github-app:
+  cert: vault:tekton-weasel/staging/jx-github-app:cert
+  id: vault:tekton-weasel/staging/jx-github-app:id
+  secret: vault:tekton-weasel/staging/jx-github-app:secret
+  clientId: vault:tekton-weasel/staging/jx-github-app:client-id
+  clientSecret: vault:tekton-weasel/staging/jx-github-app:client-secret
+  password: vault:tekton-weasel/adminUser:password
+  username: admin
