@@ -1,10 +1,6 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  annotations:
-    nginx.ingress.kubernetes.io/auth-secret: jx-basic-auth
-    nginx.ingress.kubernetes.io/auth-type: basic
-  generation: 3
   labels:
     provider: fabric8
   name: jenkins-x-github-app
