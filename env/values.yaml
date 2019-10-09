@@ -23,7 +23,7 @@ jenkins:
 prow: {}
 
 jx-tenant-service:
-  replicaCount: 1
+  replicaCount: 2
   parentDomain: jxaas.io
   parentProject: cb-aps-poc
   parentDNSZone: jxaas-io-parent
@@ -36,3 +36,6 @@ jx-tenant-service:
     serviceAnnotations:
       fabric8.io/expose: "false"
       fabric8.io/exposeUrl: https://jx-tenant-service-jx-staging.jenkins-x.live
+
+arcalosui:
+  replicaCount: 2
