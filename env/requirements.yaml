@@ -13,6 +13,9 @@ dependencies:
 - name: jenkins-x-github-app
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.8
+- name: jx-repository-controller
+  repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.0.2
 - name: jx-tenant-service
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
   version: 0.0.148
