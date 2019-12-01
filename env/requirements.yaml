@@ -21,4 +21,4 @@ dependencies:
   version: 0.0.266
 - name: lighthouse-githubapp
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
-  version: 0.0.213
+  version: 0.0.228
